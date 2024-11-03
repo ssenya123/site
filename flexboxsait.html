@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<style>
+    /* Устанавливаем высоту для всей страницы */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%; /* Изменено на 100% для полной ширины */
+
+    }
+
+    .header {
+        background-color: rgb(176, 176, 66);
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .lorem{
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sides {
+        display: flex;
+        flex-grow: 1; /* Растягиваем sides на оставшееся пространство */
+    }
+
+    .left-side, .right-side {
+        width: 400px;
+        background-color: lightpink;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .right-side {
+        background-color: lightblue;
+    }
+
+    .center-content {
+        background-color: white;
+        padding: 20px;
+        margin: 0 20px; /* Добавляем отступы слева и справа от центрального контента */
+        justify-content: center;
+        font-size: 18px;
+        flex-grow: 1; /* Растягиваем центральный контент на оставшееся пространство */
+        box-sizing: border-box;
+    }
+
+    .footer {
+        background-color: lightgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .zakat{
+        width: 60px;
+        border-radius: 50%;
+        border: 7px gray solid;
+    }
+
+    .zag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        justify-content: center;
+        width: 190px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    .log{
+        font-size: small;
+        justify-content: center;
+        display: flex;
+    }
+
+    .go{
+        display: flex;
+        background-color: rgb(66, 30, 167);
+        width: 50px;
+        justify-content: center;
+        color: white;
+        border-radius: 30px;
+    }
+
+    .BOXES{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>A level</div>
+            <div>Item 1 Item 2 Item 3 Item 4 Item 5</div>
+        </div>
+        <div class="sides">
+            <div class="left-side">Aside 1</div>
+                <div class="center-content">
+                    <div class="lorem"> ipsum dolor sit amet consectetur adipisicing 
+                     elit. Optio cum ad labore aspernatur nemo et, tempore vero, fuga eum fugit 
+                      natus consectetur doloribus inventore dignissimos commodi earum dolorem totam
+                      corrupti.
+                    </div>
+                    <h2>OUR WORK</h2>
+                        <div class="BOXES">
+                        <div class="box">
+                            <img class="zakat" src="zakat.jpeg">
+                            <div class="zag">Lorem ipsom dolor sit imet</div>
+                            <div class="log">Lorem ipsum, dolor sit amet consectetur 
+                                adipisicing elit. Magnam illum beatae accusantium 
+                                voluptatibus architecto cupiditate magni quod facilis animi
+                                 laudantium dolore amet, modi tenetur quibusdam rerum 
+                                 iusto illo aut ullam.</div>
+                            <div class="go">Go</div>
+                        </div>
+                        <div class="box">
+                            <img class="zakat" src="zakat.jpeg">
+                            <div class="zag">Lorem ipsom dolor sit imet</div>
+                            <div class="log">Lorem ipsum, dolor sit amet consectetur 
+                                adipisicing elit. Magnam illum beatae accusantium 
+                                voluptatibus architecto cupiditate magni quod facilis animi
+                                 laudantium dolore amet, modi tenetur quibusdam rerum 
+                                 iusto illo авт ullam.</div>
+                            <div class="go">Go</div>
+                        </div>
+                        <div class="box">
+                            <img class="zakat" src="zakat.jpeg">
+                            <div class="zag">Lorem ipsom dolor sit imet</div>
+                            <div class="log">Lorem ipsum, dolor sit amet consectetur 
+                                adipisicing elit. Magnam illum beatae accusantium 
+                                voluptatibus architecto cupiditate magni quod facilis animi
+                                 laudantium dolore amet, modi tenetur quibusdam rerum 
+                                 iusto illo aut ullam.</div>
+                            <div class="go">Go</div>
+                        </div>
+                    </div>
+                    <div class="BOXES">
+                        <div class="box">
+                            <img class="zakat" src="zakat.jpeg">
+                            <div class="zag">Lorem ipsom dolor sit imet</div>
+                            <div class="log">Lorem ipsum, dolor sit amet consectetur 
+                                adipisicing elit. Magnam illum beatae accusantium 
+                                voluptatibus architecto cupiditate magni quod facilis animi
+                                 laudantium dolore amet, modi tenetur quibusdam rerum 
+                                 iusto illo aut ullam.</div>
+                            <div class="go">Go</div>
+                        </div>
+                        <div class="box">
+                            <img class="zakat" src="zakat.jpeg">
+                            <div class="zag">Lorem ipsom dolor sit imet</div>
+                            <div class="log">Lorem ipsum, dolor sit amet consectetur 
+                                adipisicing elit. Magnam illum beatae accusantium 
+                                voluptatibus architecto cupiditate magni quod facilis animi
+                                 laudantium dolore amet, modi tenetur quibusdam rerum 
+                                 iusto illo aut ullam.</div>
+                            <div class="go">Go</div>
+                        </div>
+                        <div class="box">
+                            <img class="zakat" src="zakat.jpeg">
+                            <div class="zag">Lorem ipsom dolor sit imet</div>
+                            <div class="log">Lorem ipsum, dolor sit amet consectetur 
+                                adipisicing elit. Magnam illum beatae accusantium 
+                                voluptatibus architecto cupiditate magni quod facilis animi
+                                 laudantium dolore amet, modi tenetur quibusdam rerum 
+                                 iusto illo aut ullam.</div>
+                            <div class="go">Go</div>
+                        </div>
+                    </div>
+                </div>
+            <div class="right-side">Aside 2</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>  
+</body>
+</html>
